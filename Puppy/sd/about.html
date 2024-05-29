@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PupPals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper1">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>PupPals</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="./home.html" class="link">Home</a></li>
+                    <li><a href="./about.html" class="link active">About</a></li>
+                    <li><a href="./dogs.html" class="link">Dogs</a></li>
+                    <li><a href="./contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <p>Welcome to our lively dog adoption platform, where tails wag and hearts melt! We're your go-to destination for finding your new best friend on four legs. With a user-friendly interface and a plethora of adorable profiles, we've made the adoption process a breeze. Whether you're searching for a playful pup to join your active lifestyle or a cuddly companion to cozy up with, we've got you covered. Our platform is all about bringing joy to both dogs and humans alike, creating countless tail-wagging moments of happiness.</p>
+
+                    <p>Join our vibrant community of dog lovers and unlock a world of wagging tails and unconditional love. From browsing adorable photos to scheduling meet-and-greets, we're here to make your adoption journey as simple and enjoyable as possible. So, why wait? Dive into the wonderful world of dog adoption today and discover the furry friend that's been waiting just for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+   
+        function myMenuFunction() {
+         var i = document.getElementById("navMenu");
+     
+         if(i.className === "nav-menu") {
+             i.className += " responsive";
+         } else {
+             i.className = "nav-menu";
+         }
+        }
+      
+     </script>
+</body>
+</html>
